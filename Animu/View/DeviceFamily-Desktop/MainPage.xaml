@@ -1,0 +1,134 @@
+﻿<Page x:Name="Tlo"
+    x:Class="Animu.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Animu"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid>
+        
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="VisualState500">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="1000" />
+                        <AdaptiveTrigger MinWindowWidth="1000" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TranslateX.TranslateX"
+                                Value="0" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualState0">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="0" />
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TranslateX.TranslateX"
+                                Value="-150" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Grid.Background>
+            <ImageBrush 
+                AlignmentY="Center" 
+                Stretch="None" 
+                ImageSource="../../Assets/aaa.png"
+                >
+                <ImageBrush.Transform>
+                    <CompositeTransform x:Name="TranslateX" />
+                </ImageBrush.Transform>
+
+            </ImageBrush>
+        </Grid.Background>
+
+        <SplitView Canvas.ZIndex="1" x:Name="Burgerek" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" Margin="0 10 0 0 ">
+                <SplitView.Pane>
+                <StackPanel  Background="Beige" HorizontalAlignment="Left">
+                        <Button x:Name="show" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent"  Click="showpanel" />
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE007;" Height="50" Background="Transparent"  />
+                            <TextBlock Text="Glowna" FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE00A;" Height="50" Background="Transparent"  />
+                            <TextBlock Text="Ranking" FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                    </StackPanel>
+                </SplitView.Pane>
+            </SplitView>
+        
+
+            <Grid VerticalAlignment="Center"
+              Background="White"
+              CornerRadius="8"
+              Margin="60,275,10,153"
+              Padding="15 50">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Button x:Name="Play"
+                    Grid.Row="0"
+                    Content="Start"
+                    Margin="8"
+                    Background="#FF1F7CB2"
+                    Foreground="White"
+                    HorizontalAlignment="Stretch" Click="Play_Click"/>
+
+                <Grid Grid.Row="1" Margin="20 0 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton 
+                    GroupName="Dificulty"
+                    Grid.Column="0"
+                    Content="Easy"
+                    x:Name="xŁatwy"/>
+                    <RadioButton 
+                    GroupName="Dificulty"
+                    Grid.Column="1"
+                    Content="Medium"
+                    x:Name="xTrudny"/>
+                </Grid>
+
+                <Grid Grid.Row="2" Margin="20 0 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <RadioButton 
+                    GroupName="Dificulty"
+                    Grid.Column="0"
+                    Content="Hard"
+                    x:Name="xŚredni"/>
+                    <RadioButton 
+                    GroupName="Dificulty"
+                    Grid.Column="1"
+                    Content="Very Hard"
+                    x:Name="xBTrudny"/>
+                </Grid>
+            </Grid>
+   
+
+
+
+        </Grid>
+
+
+
+
+
+
+
+</Page>
