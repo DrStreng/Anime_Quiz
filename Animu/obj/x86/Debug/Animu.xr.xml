@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Punkciki" />
+    <RootPropertyPathName Name="Ranking" />
+    <RootPropertyPathName Name="Glowna" />
+    <RootPropertyPathName Name="zdjecie" />
+    <RootPropertyPathName Name="Punkty" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
@@ -58,6 +65,7 @@
       <RootProperty Name="OpenPaneLength" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Pane" />
+      <RootProperty Name="PanePlacement" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootMethod Name="GetZIndex" />
@@ -85,11 +93,15 @@
       <RootProperty Name="Height" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Background" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Children" />
       <RootProperty Name="Orientation" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransformOrigin" />
     </RootType>
     <RootType FullName="Animu.View.EndGame" />
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
@@ -111,8 +123,10 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Source" />
     </RootType>
     <RootType FullName="Animu.View.Play" />
     <RootType FullName="Animu.View.Results" />
+    <RootType FullName="Animu.View.LiveTitleChange" />
   </Roots.RootTypes>
 </Roots>

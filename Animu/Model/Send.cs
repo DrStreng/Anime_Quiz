@@ -10,5 +10,6 @@ namespace Animu.Model
     {
         public int poprawneOdp { get; set; }
         public int maxPytan { get; set; }
+        public int punkciki { get; set; }
     }
 }

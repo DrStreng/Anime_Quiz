@@ -1,5 +1,6 @@
 WinMetadata\Windows.winmd
 Assets\aaa.png
+Assets\aaa.scale-400.png
 Assets\animeChar\Akame.png
 Assets\animeChar\Akeno Himejima.png
 Assets\animeChar\Angela Balzac.png
@@ -47,7 +48,13 @@ Assets\animeChar\Yuudachi.png
 Assets\animeChar\Yuuki Asuna.png
 Assets\animeChar\Yuuko Shionji.png
 Assets\LockScreenLogo.scale-200.png
+Assets\Medals\certificate.png
+Assets\Medals\certificate.scale-400.png
+Assets\Medals\certificate1.png
+Assets\Medals\certificate2.png
+Assets\Medals\medal.png
 Assets\MojuBJ.jpg
+Assets\pixel_art_pattern_gray-wallpaper-2560x1600.jpg
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png
@@ -55,5 +62,5 @@ Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 Animu.xr.xml
-DB\Animu.db
+DB\aaa.db
 Properties\Default.rd.xml

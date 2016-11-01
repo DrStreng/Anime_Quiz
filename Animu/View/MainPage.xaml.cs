@@ -1,4 +1,6 @@
 ﻿using Animu.Model;
+using Animu.View;
+using Animu.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,6 +15,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using NotificationsExtensions.ToastContent;
+using Windows.UI.Notifications;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -26,6 +30,15 @@ namespace Animu
         public MainPage()
         {
             this.InitializeComponent();
+            this.DataContext = new SampleViewModel();
+            IToastImageAndText02 trying_toast = ToastContentFactory.CreateToastImageAndText02();
+            trying_toast.TextHeading.Text = "Toast notification Example";
+            trying_toast.TextBodyWrap.Text = "Animu Quiz app";
+            ScheduledToastNotification giveittime;
+            giveittime = new ScheduledToastNotification(trying_toast.GetXml(), DateTime.Now.AddSeconds(2));
+            giveittime.Id = "Any_ID";
+            ToastNotificationManager.CreateToastNotifier().AddToSchedule(giveittime);
+
         }
 
         private void showpanel(object sender, RoutedEventArgs e)
@@ -54,6 +67,21 @@ namespace Animu
             else mode = Mode.VERYHARD;
 
             Frame.Navigate(typeof(View.Play),mode);
+        }
+
+        private void ranking(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(View.Results));
+        }
+
+        private void glowna(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+
+        private void live_titlesClick(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(LiveTitleChange));
         }
     }
 }

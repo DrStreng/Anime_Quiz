@@ -22,7 +22,7 @@
             </ImageBrush>
         </Grid.Background>
         <Grid VerticalAlignment="Top">
-            <Image x:ConnectionId='28' x:Name="ImageContent"
+            <Image x:ConnectionId='34' x:Name="ImageContent"
                    Width="330"
                    Height="300"
                    Margin="10"/>
@@ -47,7 +47,7 @@
                             <RowDefinition Height="auto"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <TextBlock x:ConnectionId='27' x:Name="zdobytepkt"
+                        <TextBlock x:ConnectionId='33' x:Name="zdobytepkt"
                             Foreground="Black"
                             HorizontalAlignment="Center"
                             FontSize="30"
@@ -68,7 +68,7 @@
                             <RowDefinition Height="auto"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <TextBlock x:ConnectionId='26' x:Name="txtNum"
+                        <TextBlock x:ConnectionId='32' x:Name="txtNum"
                             Foreground="Black"
                             HorizontalAlignment="Center"
                             FontSize="30"
@@ -84,37 +84,37 @@
                     
                 </Grid>
                 
-                <ProgressBar x:ConnectionId='21' x:Name="MyProgress"
+                <ProgressBar x:ConnectionId='27' x:Name="MyProgress"
                              Margin="10"
                              Background="#0d1d36"
                              Foreground="#a9e6f8"
                              VerticalAlignment="Top"
                              HorizontalAlignment="Stretch"/>
                 
-                <Button x:ConnectionId='22' x:Name="ButtonOdpA"
+                <Button x:ConnectionId='28' x:Name="ButtonOdpA"
                         Content="OdpA"
                         Margin="5"
                         Background="#0d1d36"
                         Foreground="White"
                         HorizontalAlignment="Stretch"                         />
-                <Button x:ConnectionId='23' x:Name="ButtonOdpB"
+                <Button x:ConnectionId='29' x:Name="ButtonOdpB"
                         Content="OdpB"
                         Margin="5"
                         Background="#0d1d36"
                         Foreground="White"
                         HorizontalAlignment="Stretch"                         />
-                <Button x:ConnectionId='24' x:Name="ButtonOdpC"
+                <Button x:ConnectionId='30' x:Name="ButtonOdpC"
                         Content="OdpC"
                         Margin="5"
                         Background="#0d1d36"
                         Foreground="White"
                         HorizontalAlignment="Stretch"                         />
-                <Button x:ConnectionId='25' x:Name="ButtonOdpD"
+                <Button x:ConnectionId='31' x:Name="ButtonOdpD"
                         Content="OdpD"
                         Margin="5"
                         Background="#0d1d36"
                         Foreground="White"
-                        HorizontalAlignment="Stretch"/>
+                        HorizontalAlignment="Stretch"                         />
 
             </StackPanel>
             

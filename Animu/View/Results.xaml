@@ -42,6 +42,20 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+            <Grid  Grid.Column="0">
+                <TextBlock x:Name="pkt"
+                       FontSize="35"
+                       Text="{Binding Punkty}"
+                       HorizontalAlignment="Center"
+                       Foreground="#0d1d36"/>
+            </Grid>
+            
+            <Grid Grid.Column="1">
+                <Image Source="{Binding zdjecie}"
+                       Width="50"
+                       Height="50"/>
+            </Grid>
+
         </Grid>
     </Grid>
 

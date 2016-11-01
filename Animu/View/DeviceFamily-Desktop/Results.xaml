@@ -12,7 +12,7 @@
             <ImageBrush 
                 AlignmentY="Center" 
                 Stretch="None" 
-                ImageSource="../../Assets/aaa.png"
+                ImageSource="../../Assets/pixel_art_pattern_gray-wallpaper-2560x1600.jpg"
                 >
                 <ImageBrush.Transform>
                     <CompositeTransform TranslateX="-150"/>
@@ -20,19 +20,23 @@
 
             </ImageBrush>
         </Grid.Background>
-        
+
         <SplitView Canvas.ZIndex="1" x:Name="Burgerek" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" Margin="0 10 0 0 ">
             <SplitView.Pane>
                 <StackPanel  Background="Beige" HorizontalAlignment="Left">
                     <Button x:Name="show" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent"  Click="showpanel" />
                     <StackPanel Orientation="Horizontal">
-                        <Button x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE007;" Height="50" Background="Transparent"  />
-                        <TextBlock Text="Glowna" FontSize="20" VerticalAlignment="Center"/>
+                        <Button x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE007;" Height="50" Background="Transparent" Click="glowna"  />
+                        <TextBlock Text="{Binding Glowna}" FontSize="20" VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
-                        <Button x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE00A;" Height="50" Background="Transparent"  />
-                        <TextBlock Text="Ranking" FontSize="20" VerticalAlignment="Center"/>
+                        <Button x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE00A;" Height="50" Background="Transparent" Click="ranking"  />
+                        <TextBlock Text="{Binding Ranking}" FontSize="20" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="live_titles" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE104;" Height="50" Background="Transparent" Click="live_titlesClick"  />
+                        <TextBlock Text="live_titles" FontSize="20" VerticalAlignment="Center"/>
                     </StackPanel>
 
                 </StackPanel>

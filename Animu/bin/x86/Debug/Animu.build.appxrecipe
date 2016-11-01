@@ -10,19 +10,19 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>cda792f6-7c0b-44a5-80cf-a21d74a8f71e</PackageIdentityName>
     <PackageIdentityPublisher>CN=strengol</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Animu recovery\Animu\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Animu recovery\Animu\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\bin\x86\Debug\Animu.exe">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\bin\x86\Debug\Animu.exe">
       <PackagePath>entrypoint\Animu.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\strengol\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -343,200 +343,224 @@
     <AppxPackagedFile Include="C:\Users\strengol\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\strengol\.nuget\packages\NotificationsExtensions.UniversalApps\1.0.3\lib\netcore451\NotificationsExtensions.winmd">
+      <PackagePath>NotificationsExtensions.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UWP.2015\3.14.2\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.14393.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\MojuBJ.jpg">
-      <PackagePath>Assets\MojuBJ.jpg</PackagePath>
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\aaa.scale-400.png">
+      <PackagePath>Assets\aaa.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\DB\Animu.db">
-      <PackagePath>DB\Animu.db</PackagePath>
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\Medals\certificate.scale-400.png">
+      <PackagePath>Assets\Medals\certificate.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\aaa.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\aaa.png">
       <PackagePath>Assets\aaa.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Akame.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Akame.png">
       <PackagePath>Assets\animeChar\Akame.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Akeno Himejima.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Akeno Himejima.png">
       <PackagePath>Assets\animeChar\Akeno Himejima.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Angela Balzac.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Angela Balzac.png">
       <PackagePath>Assets\animeChar\Angela Balzac.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Ayano Tateyama.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Ayano Tateyama.png">
       <PackagePath>Assets\animeChar\Ayano Tateyama.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Braz D. Blood.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Braz D. Blood.png">
       <PackagePath>Assets\animeChar\Braz D. Blood.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Chaika Trabant.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Chaika Trabant.png">
       <PackagePath>Assets\animeChar\Chaika Trabant.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Chitoge Kirisaki.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Chitoge Kirisaki.png">
       <PackagePath>Assets\animeChar\Chitoge Kirisaki.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Emiya Shirou.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Emiya Shirou.png">
       <PackagePath>Assets\animeChar\Emiya Shirou.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Fremy Speeddraw.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Fremy Speeddraw.png">
       <PackagePath>Assets\animeChar\Fremy Speeddraw.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Genos.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Genos.png">
       <PackagePath>Assets\animeChar\Genos.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Gilgamesh.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Gilgamesh.png">
       <PackagePath>Assets\animeChar\Gilgamesh.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Hirai Yukari.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Hirai Yukari.png">
       <PackagePath>Assets\animeChar\Hirai Yukari.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Homura Akemi.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Homura Akemi.png">
       <PackagePath>Assets\animeChar\Homura Akemi.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Illyasviel von Einzbern.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Illyasviel von Einzbern.png">
       <PackagePath>Assets\animeChar\Illyasviel von Einzbern.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Itaru Hashida.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Itaru Hashida.png">
       <PackagePath>Assets\animeChar\Itaru Hashida.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Izumi Curtis.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Izumi Curtis.png">
       <PackagePath>Assets\animeChar\Izumi Curtis.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Judal.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Judal.png">
       <PackagePath>Assets\animeChar\Judal.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Juuzou.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Juuzou.png">
       <PackagePath>Assets\animeChar\Juuzou.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\King Bradley.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\King Bradley.png">
       <PackagePath>Assets\animeChar\King Bradley.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Kiritsugu Emiya.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Kiritsugu Emiya.png">
       <PackagePath>Assets\animeChar\Kiritsugu Emiya.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Koneko Toujou.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Koneko Toujou.png">
       <PackagePath>Assets\animeChar\Koneko Toujou.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Kurisu Makise.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Kurisu Makise.png">
       <PackagePath>Assets\animeChar\Kurisu Makise.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Kuroko Tetsuya.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Kuroko Tetsuya.png">
       <PackagePath>Assets\animeChar\Kuroko Tetsuya.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Kurumi Tokisaki.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Kurumi Tokisaki.png">
       <PackagePath>Assets\animeChar\Kurumi Tokisaki.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Lelei La Lalena.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Lelei La Lalena.png">
       <PackagePath>Assets\animeChar\Lelei La Lalena.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Lelouch Lamperouge.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Lelouch Lamperouge.png">
       <PackagePath>Assets\animeChar\Lelouch Lamperouge.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Maho Hiyajo.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Maho Hiyajo.png">
       <PackagePath>Assets\animeChar\Maho Hiyajo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Maka Albarn.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Maka Albarn.png">
       <PackagePath>Assets\animeChar\Maka Albarn.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Meliodas.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Meliodas.png">
       <PackagePath>Assets\animeChar\Meliodas.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Mikasa Ackerman.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Mikasa Ackerman.png">
       <PackagePath>Assets\animeChar\Mikasa Ackerman.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Misaka Mikoto.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Misaka Mikoto.png">
       <PackagePath>Assets\animeChar\Misaka Mikoto.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Moeka Kiryuu.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Moeka Kiryuu.png">
       <PackagePath>Assets\animeChar\Moeka Kiryuu.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Nico Yazawa.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Nico Yazawa.png">
       <PackagePath>Assets\animeChar\Nico Yazawa.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Portgas D. Ace.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Portgas D. Ace.png">
       <PackagePath>Assets\animeChar\Portgas D. Ace.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Rider.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Rider.png">
       <PackagePath>Assets\animeChar\Rider.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Rin Tohsaka.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Rin Tohsaka.png">
       <PackagePath>Assets\animeChar\Rin Tohsaka.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Ryuuko Matoi.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Ryuuko Matoi.png">
       <PackagePath>Assets\animeChar\Ryuuko Matoi.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Saber.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Saber.png">
       <PackagePath>Assets\animeChar\Saber.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Shinya Kougami.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Shinya Kougami.png">
       <PackagePath>Assets\animeChar\Shinya Kougami.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Suzuha Amane.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Suzuha Amane.png">
       <PackagePath>Assets\animeChar\Suzuha Amane.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Tatsumi.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Tatsumi.png">
       <PackagePath>Assets\animeChar\Tatsumi.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Yukino Yukinoshita.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Yukino Yukinoshita.png">
       <PackagePath>Assets\animeChar\Yukino Yukinoshita.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Yuno Gasai.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Yuno Gasai.png">
       <PackagePath>Assets\animeChar\Yuno Gasai.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Yuudachi.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Yuudachi.png">
       <PackagePath>Assets\animeChar\Yuudachi.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Yuuki Asuna.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Yuuki Asuna.png">
       <PackagePath>Assets\animeChar\Yuuki Asuna.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\animeChar\Yuuko Shionji.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\animeChar\Yuuko Shionji.png">
       <PackagePath>Assets\animeChar\Yuuko Shionji.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\Medals\certificate.png">
+      <PackagePath>Assets\Medals\certificate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\Medals\certificate1.png">
+      <PackagePath>Assets\Medals\certificate1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\Medals\certificate2.png">
+      <PackagePath>Assets\Medals\certificate2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\Medals\medal.png">
+      <PackagePath>Assets\Medals\medal.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\pixel_art_pattern_gray-wallpaper-2560x1600.jpg">
+      <PackagePath>Assets\pixel_art_pattern_gray-wallpaper-2560x1600.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Assets\MojuBJ.jpg">
+      <PackagePath>Assets\MojuBJ.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\DB\aaa.db">
+      <PackagePath>DB\aaa.db</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\bin\x86\Debug\Animu.xr.xml">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\bin\x86\Debug\Animu.xr.xml">
       <PackagePath>Animu.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\bin\x86\Debug\Core\Animu.exe">
+    <AppxPackagedFile Include="D:\Animu recovery\Animu\bin\x86\Debug\Core\Animu.exe">
       <PackagePath>Animu.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

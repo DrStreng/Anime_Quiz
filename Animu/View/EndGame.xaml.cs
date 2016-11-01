@@ -1,4 +1,5 @@
 ﻿using Animu.Model;
+using Animu.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,21 +24,44 @@ namespace Animu.View
     /// </summary>
     public sealed partial class EndGame : Page
     {
+      
         public EndGame()
         {
             this.InitializeComponent();
-        }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            base.OnNavigatedTo(e);
-            var data = e.Parameter as Send;
-            wynik.Text = $"{ data.poprawneOdp }" +" / "+ $"{data.maxPytan}";
+       
+            this.DataContext = new SampleViewModel();
+      
+
         }
 
         private void zagrajPonownie_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
         }
+
+        private void ranking(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(View.Results));
+        }
+
+        private void glowna(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            DBConnect db;
+            db = new DBConnect();
+            var data = e.Parameter as Send;
+
+           punkcikiText.Text = $"{data.punkciki}";
+            wynik.Text = $"{data.poprawneOdp }" + " / " + $"{data.maxPytan}";
+            db.Insert(data.punkciki, data.maxPytan, data.poprawneOdp);
+
+        }
+
         private void showpanel(object sender, RoutedEventArgs e)
         {
             Burgerek.IsPaneOpen = !Burgerek.IsPaneOpen;
@@ -46,5 +70,10 @@ namespace Animu.View
             else
                 show.Content = "\uE00F";
         }
+        private void live_titlesClick(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(LiveTitleChange));
+        }
+
     }
 }

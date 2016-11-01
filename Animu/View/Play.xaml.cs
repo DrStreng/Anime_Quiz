@@ -1,5 +1,6 @@
 ﻿
 using Animu.Model;
+using Animu.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -43,8 +44,10 @@ namespace Animu.View
 
         public Play()
         {
+
             this.InitializeComponent();
             db = new DBConnect();
+            this.DataContext = new SampleViewModel();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -119,9 +122,11 @@ namespace Animu.View
                 timer.Start();
             
             } else {
+                
                 Frame.Navigate(typeof(EndGame),new Send() {
                     poprawneOdp=this.poprawneOdp,
-                    maxPytan=this.maxPytan
+                    maxPytan=this.maxPytan,
+                    punkciki = this.punkty
                 });
             }
 
@@ -148,6 +153,20 @@ namespace Animu.View
         private void ButtonOdpA_Click(object sender, RoutedEventArgs e)
         {
             sprawdzOdp(sender as Button);
+        }
+
+        private void ranking(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(View.Results));
+        }
+
+        private void glowna(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+        private void live_titlesClick(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(LiveTitleChange));
         }
     }
 }

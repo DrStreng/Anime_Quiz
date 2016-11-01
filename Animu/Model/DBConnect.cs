@@ -1,11 +1,24 @@
-﻿using SQLite.Net;
-using System;
+﻿
+
+using SQLite.Net;
+using SQLite.Net.Async;
+using SQLite.Net.Platform.WinRT;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
+
 namespace Animu.Model
 {
+    public class DebugTraceListener : ITraceListener
+    {
+        public void Receive(string message)
+        {
+            Debug.WriteLine(message);
+        }
+    }
+
     public class DBConnect
     {
         string path;
@@ -13,7 +26,7 @@ namespace Animu.Model
 
         public DBConnect()
         {
-            path = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, "DB", "Animu.db");
+            path = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, "DB", "aaa.db");
             conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
         }
 
@@ -39,12 +52,28 @@ namespace Animu.Model
             return data.ToList();
         }
 
-        public int wprowadzWynik(int punkty, int iloscPytan)
+
+
+        internal async void Insert(int punkciki, int maxPytan, int poprawneOdp)
         {
-            return conn.Insert(new Wyniki() {
-                Punkty = punkty,
-                IloscPytan = iloscPytan
-            });
+           conn.Close();
+
+         // string path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "ciota.db");
+
+         using (var connection = new SQLiteConnectionWithLock(new SQLitePlatformWinRT(), new SQLiteConnectionString(path, false)))
+          {
+              connection.TraceListener = new DebugTraceListener();
+              var asyncConnection = new SQLiteAsyncConnection(() => { return connection; });
+
+          //  await asyncConnection.CreateTableAsync<Wyniki>();
+           await asyncConnection.InsertAsync(new Wyniki
+             {
+                  Punkty = punkciki,
+                  IloscPytan = maxPytan,
+                  PoprawneOdp = poprawneOdp
+               });
+                var wniki = await asyncConnection.Table<Wyniki>().ToListAsync();
+            }
         }
 
         internal List<Wyniki> getWyniki()

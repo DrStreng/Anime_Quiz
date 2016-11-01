@@ -1,1 +1,1 @@
-C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\Animu.csproj;x86
+D:\Animu recovery\Animu\Animu.csproj;x86

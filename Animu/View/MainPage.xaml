@@ -26,7 +26,7 @@
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal">
-                            <Button x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE00A;" Height="50" Background="Transparent"  />
+                            <Button x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE00A;" Height="50" Background="Transparent" Click="ranking"  />
                             <TextBlock Text="Ranking" FontSize="20" VerticalAlignment="Center"/>
                         </StackPanel>
 

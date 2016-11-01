@@ -278,6 +278,15 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "NotificationsExtensions.UniversalApps/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
+        },
+        "runtime": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
+        }
+      },
       "SQLite.Net-PCL/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -2140,6 +2149,15 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "NotificationsExtensions.UniversalApps/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
+        },
+        "runtime": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
+        }
+      },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -3917,6 +3935,15 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "NotificationsExtensions.UniversalApps/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
+        },
+        "runtime": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
+        }
+      },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -5659,6 +5686,15 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "NotificationsExtensions.UniversalApps/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
+        },
+        "runtime": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -7441,6 +7477,15 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "NotificationsExtensions.UniversalApps/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
+        },
+        "runtime": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
+        }
+      },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -9183,6 +9228,15 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "NotificationsExtensions.UniversalApps/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
+        },
+        "runtime": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -10963,6 +11017,15 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "NotificationsExtensions.UniversalApps/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
+        },
+        "runtime": {
+          "lib/netcore451/NotificationsExtensions.winmd": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -13062,6 +13125,22 @@
         "ref/net46/Microsoft.Win32.Primitives.dll",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
+      ]
+    },
+    "NotificationsExtensions.UniversalApps/1.0.3": {
+      "sha512": "GhvWc83B7QNWn7zS0u+hq9/sDqc47pbg59T1BZAbDq19LmLTORwR71+Bqt2/LaHYpWC3uIERHxJl2eAmBJVD+w==",
+      "type": "package",
+      "files": [
+        "NotificationsExtensions.UniversalApps.1.0.3.nupkg.sha512",
+        "NotificationsExtensions.UniversalApps.nuspec",
+        "lib/netcore451/NotificationsExtensions.XML",
+        "lib/netcore451/NotificationsExtensions.pdb",
+        "lib/netcore451/NotificationsExtensions.pri",
+        "lib/netcore451/NotificationsExtensions.winmd",
+        "lib/wpa81/NotificationsExtensions.XML",
+        "lib/wpa81/NotificationsExtensions.pdb",
+        "lib/wpa81/NotificationsExtensions.pri",
+        "lib/wpa81/NotificationsExtensions.winmd"
       ]
     },
     "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -15794,6 +15873,7 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
+      "NotificationsExtensions.UniversalApps >= 1.0.3",
       "SQLite.Net-PCL >= 3.1.1",
       "SQLite.Net.Async-PCL >= 3.1.1",
       "System.Data.SQLite >= 1.0.103"

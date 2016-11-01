@@ -1,0 +1,2 @@
+MainPackage=D:\Animu recovery\Animu\bin\x64\Debug\Animu_1.0.0.0_x64_Debug.appx
+SymbolPackage=D:\Animu recovery\Animu\AppPackages\Animu_1.0.0.0_Debug_Test\Animu_1.0.0.0_x64_Debug.appxsym

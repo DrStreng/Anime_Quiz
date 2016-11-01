@@ -17,6 +17,9 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>Animu_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -89,17 +92,27 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Content Include="Assets\MojuBJ.jpg" />
-    <Content Include="DB\Animu.db">
+    <Content Include="Assets\aaa.scale-400.png" />
+    <Content Include="Assets\Medals\certificate.scale-400.png" />
+    <Content Include="Assets\pixel_art_pattern_gray-wallpaper-2560x1600.jpg" />
+    <Content Include="DB\aaa.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="project.json" />
+    <None Include="project.lock.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\ScoreTemplate.cs" />
     <Compile Include="Model\Wyniki.cs" />
+    <Compile Include="ViewModel\SampleViewModel.cs" />
+    <Compile Include="ViewModel\SendViewModel.cs" />
+    <Compile Include="ViewModel\VMBase.cs" />
+    <Compile Include="View\LiveTitleChange.xaml.cs">
+      <DependentUpon>LiveTitleChange.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -171,14 +184,19 @@
     <Content Include="Assets\animeChar\Yuudachi.png" />
     <Content Include="Assets\animeChar\Yuuki Asuna.png" />
     <Content Include="Assets\animeChar\Yuuko Shionji.png" />
-    <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\Medals\certificate.png" />
+    <Content Include="Assets\Medals\certificate1.png" />
+    <Content Include="Assets\Medals\certificate2.png" />
+    <Content Include="Assets\Medals\medal.png" />
+    <Content Include="Assets\MojuBJ.jpg" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -205,6 +223,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\DeviceFamily-Mobile\LiveTitleChange.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\DeviceFamily-Mobile\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -216,6 +238,10 @@
     <Page Include="View\DeviceFamily-Mobile\Results.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LiveTitleChange.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -230,8 +256,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Results.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -240,9 +266,6 @@
     </SDKReference>
     <SDKReference Include="SQLite.UWP.2015, Version=3.14.2">
       <Name>SQLite for Universal Windows Platform</Name>
-    </SDKReference>
-    <SDKReference Include="WindowsMobile, Version=10.0.14393.0">
-      <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
   </ItemGroup>
   <ItemGroup />

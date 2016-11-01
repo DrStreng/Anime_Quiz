@@ -114,7 +114,7 @@
                         Margin="5"
                         Background="#0d1d36"
                         Foreground="White"
-                        HorizontalAlignment="Stretch"/>
+                        HorizontalAlignment="Stretch" Click="ButtonOdpA_Click"/>
 
             </StackPanel>
             

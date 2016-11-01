@@ -30,10 +30,9 @@ namespace Animu
         public App()
         {
             this.InitializeComponent();
+            ApplicationView.PreferredLaunchViewSize = new Size(400, 600);
             this.Suspending += OnSuspending;
-            
         }
-
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
@@ -42,7 +41,6 @@ namespace Animu
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-          
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
@@ -79,10 +77,7 @@ namespace Animu
                     rootFrame.Navigate(typeof(MainPage), e.Arguments);
                 }
                 // Ensure the current window is active
-                
                 Window.Current.Activate();
-             
-
             }
         }
 

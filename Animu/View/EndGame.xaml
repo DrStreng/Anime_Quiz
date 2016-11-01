@@ -33,7 +33,14 @@
             </Grid.RowDefinitions>
             <TextBlock x:Name="wynik"
                        FontSize="35"
+                       Grid.Row="0"
                        Text="wynik"
+                       HorizontalAlignment="Center"
+                       Foreground="#0d1d36"/>
+            <TextBlock x:Name="punkcikiText"
+                       FontSize="35"
+                       Grid.Row="1"
+                       Text="punkcikiText"
                        HorizontalAlignment="Center"
                        Foreground="#0d1d36"/>
             <Button x:Name="zagrajPonownie"

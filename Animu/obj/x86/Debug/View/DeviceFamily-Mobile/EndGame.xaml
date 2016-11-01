@@ -7,34 +7,85 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+
     <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='12' x:Name="VisualState500">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="100" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TranslateX.TranslateX"
+                                Value="-150" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='13' x:Name="VisualState0">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TranslateX.TranslateX"
+                                Value="0" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
         <Grid.Background>
             <ImageBrush 
                 AlignmentY="Center" 
-                
-                ImageSource="../../Assets/MojuBJ.jpg"
+                Stretch="None" 
+                ImageSource="../../Assets/pixel_art_pattern_gray-wallpaper-2560x1600.jpg"
                 >
-
-
+                <ImageBrush.Transform>
+                    <CompositeTransform x:ConnectionId='14' x:Name="TranslateX" TranslateX="-150"/>
+                </ImageBrush.Transform>
             </ImageBrush>
         </Grid.Background>
+
+
+        <SplitView x:ConnectionId='15' Canvas.ZIndex="1" x:Name="Burgerek" PanePlacement="Right" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="50" Margin="0,0,0,0">
+            <SplitView.Pane>
+                <StackPanel  Background="Beige" HorizontalAlignment="Right" Margin="0,0,0,0" Width="50" RenderTransformOrigin="1.146,0.497">
+                    <Button x:ConnectionId='19' x:Name="show" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent"                    />
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='22' x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE007;" Height="50" Background="Transparent"                 />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='21' x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE00A;" Height="50" Background="Transparent"                  />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='20' x:Name="live_titles" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE104;" Height="50" Background="Transparent"                           />
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+
         <Grid VerticalAlignment="Center"
            
               Background="White"
               CornerRadius="8"
-              Margin="10,138,6,10"
-              Padding="15 50">
+              Margin="10,284,65,151"
+              Padding="15 50" Height="205">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
-            <TextBlock x:ConnectionId='10' x:Name="wynik"
+            <TextBlock x:ConnectionId='16' x:Name="wynik"
                        FontSize="35"
+                       Grid.Row="0"
                        Text="wynik"
                        HorizontalAlignment="Center"
                        Foreground="#0d1d36"/>
-            <Button x:ConnectionId='11' x:Name="zagrajPonownie"
+            <TextBlock x:ConnectionId='17' x:Name="punkcikiText"
+                       FontSize="35"
+                       Grid.Row="1"
+                       Text="{Binding Punkciki}"
+                       HorizontalAlignment="Center"
+                       Foreground="#0d1d36"/>
+            <Button x:ConnectionId='18' x:Name="zagrajPonownie"
                     Grid.Row="2"
                     Content="Try Again"
                     Margin="10"

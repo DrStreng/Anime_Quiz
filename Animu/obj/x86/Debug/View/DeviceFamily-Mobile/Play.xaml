@@ -12,24 +12,43 @@
         <Grid.Background>
             <ImageBrush 
                 AlignmentY="Center" 
-               
-                ImageSource="../../Assets/MojuBJ.jpg"
+                Stretch="None" 
+                ImageSource="../../Assets/pixel_art_pattern_gray-wallpaper-2560x1600.jpg"
                 >
-      
+                <ImageBrush.Transform>
+                    <CompositeTransform TranslateX="-150"/>
+                </ImageBrush.Transform>
 
             </ImageBrush>
         </Grid.Background>
+
+        <SplitView x:ConnectionId='14' Canvas.ZIndex="1" x:Name="Burgerek" PanePlacement="Right" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="50" Margin="0,0,0,0">
+            <SplitView.Pane>
+                <StackPanel  Background="Beige" HorizontalAlignment="Right" Margin="0,0,0,0" Width="50" RenderTransformOrigin="1.146,0.497">
+                    <Button x:ConnectionId='23' x:Name="show" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent"                    />
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='26' x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE007;" Height="50" Background="Transparent"                 />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='25' x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE00A;" Height="50" Background="Transparent"                  />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='24' x:Name="live_titles" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE104;" Height="50" Background="Transparent"                           />
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+
         <Grid VerticalAlignment="Top">
-            <Image x:ConnectionId='20' x:Name="ImageContent"
-                   Width="330"
+            <Image x:ConnectionId='22' x:Name="ImageContent"
                    Height="300"
-                   Margin="10"/>
+                   Margin="15,10,60,10"/>
         </Grid>
         <Grid VerticalAlignment="Center"></Grid>
         <Grid VerticalAlignment="Bottom"
               Background="#faf4da"
               Padding="16 16"
-              Margin=" 8 40 8 8"
+              Margin=" 10 40 60 8"
               CornerRadius="10"
               >
             <StackPanel Orientation="Vertical">
@@ -38,14 +57,14 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    
+
                     <Grid BorderThickness="1"
                         BorderBrush="Beige">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="auto"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <TextBlock x:ConnectionId='19' x:Name="zdobytepkt"
+                        <TextBlock x:ConnectionId='21' x:Name="zdobytepkt"
                             Foreground="Black"
                             HorizontalAlignment="Center"
                             FontSize="30"
@@ -58,7 +77,7 @@
                                        HorizontalAlignment="Center" />
                         </Grid>
                     </Grid>
-                    
+
                     <Grid BorderThickness="1"
                           Grid.Column="1"
                         BorderBrush="Beige">
@@ -66,7 +85,7 @@
                             <RowDefinition Height="auto"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <TextBlock x:ConnectionId='18' x:Name="txtNum"
+                        <TextBlock x:ConnectionId='20' x:Name="txtNum"
                             Foreground="Black"
                             HorizontalAlignment="Center"
                             FontSize="30"
@@ -79,43 +98,43 @@
                                        HorizontalAlignment="Center" />
                         </Grid>
                     </Grid>
-                    
+
                 </Grid>
-                
-                <ProgressBar x:ConnectionId='13' x:Name="MyProgress"
+
+                <ProgressBar x:ConnectionId='15' x:Name="MyProgress"
                              Margin="10"
                              Background="#0d1d36"
                              Foreground="#a9e6f8"
                              VerticalAlignment="Top"
                              HorizontalAlignment="Stretch"/>
-                
-                <Button x:ConnectionId='14' x:Name="ButtonOdpA"
+
+                <Button x:ConnectionId='16' x:Name="ButtonOdpA"
                         Content="OdpA"
                         Margin="5"
                         Background="#0d1d36"
                         Foreground="White"
                         HorizontalAlignment="Stretch"                         />
-                <Button x:ConnectionId='15' x:Name="ButtonOdpB"
+                <Button x:ConnectionId='17' x:Name="ButtonOdpB"
                         Content="OdpB"
                         Margin="5"
                         Background="#0d1d36"
                         Foreground="White"
                         HorizontalAlignment="Stretch"                         />
-                <Button x:ConnectionId='16' x:Name="ButtonOdpC"
+                <Button x:ConnectionId='18' x:Name="ButtonOdpC"
                         Content="OdpC"
                         Margin="5"
                         Background="#0d1d36"
                         Foreground="White"
                         HorizontalAlignment="Stretch"                         />
-                <Button x:ConnectionId='17' x:Name="ButtonOdpD"
+                <Button x:ConnectionId='19' x:Name="ButtonOdpD"
                         Content="OdpD"
                         Margin="5"
                         Background="#0d1d36"
                         Foreground="White"
-                        HorizontalAlignment="Stretch"/>
+                        HorizontalAlignment="Stretch"                         />
 
             </StackPanel>
-            
+
         </Grid>
     </Grid>
 </Page>
