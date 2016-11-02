@@ -12,7 +12,7 @@
             <ImageBrush 
                 AlignmentY="Center" 
                 Stretch="None" 
-                ImageSource="../../Assets/pixel_art_pattern_gray-wallpaper-2560x1600.jpg"
+                ImageSource="{Binding DesktopBG}"
                 >
                 <ImageBrush.Transform>
                     <CompositeTransform TranslateX="-150"/>

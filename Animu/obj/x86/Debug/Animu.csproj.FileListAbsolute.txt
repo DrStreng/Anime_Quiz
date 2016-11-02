@@ -204,7 +204,6 @@ C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\obj\x86\Debu
 C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\obj\x86\Debug\View\MainPage.xbf
 C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\obj\x86\Debug\View\EndGame.xbf
 C:\Users\strengol\Documents\Visual Studio 2015\Projects\Animu\Animu\bin\x86\Debug\DB\Animu.db
-D:\Animu recovery\Animu\obj\x86\Debug\Animu.csprojResolveAssemblyReference.cache
 D:\Animu recovery\Animu\obj\x86\Debug\App.g.i.cs
 D:\Animu recovery\Animu\obj\x86\Debug\App.g.cs
 D:\Animu recovery\Animu\obj\x86\Debug\View\MainPage.g.i.cs
@@ -439,7 +438,6 @@ D:\Animu recovery\Animu\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Animu recovery\Animu\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Animu recovery\Animu\obj\x86\Debug\ProjectArchitectures.txt
 D:\Animu recovery\Animu\bin\x86\Debug\DB\aaa.db
-D:\Animu recovery\Animu\bin\x86\Debug\Core\ForBundle\AppxManifest.xml
 D:\Animu recovery\Animu\obj\x86\Debug\View\LiveTitleChange.g.i.cs
 D:\Animu recovery\Animu\obj\x86\Debug\View\LiveTitleChange.g.cs
 D:\Animu recovery\Animu\obj\x86\Debug\View\LiveTitleChange.xaml
@@ -451,3 +449,7 @@ D:\Animu recovery\Animu\obj\x86\Debug\NotificationsExtensions.pri.xml
 D:\Animu recovery\Animu\bin\x86\Debug\View\DeviceFamily-Mobile\LiveTitleChange.xbf
 D:\Animu recovery\Animu\obj\x86\Debug\View\DeviceFamily-Mobile\LiveTitleChange.xaml
 D:\Animu recovery\Animu\obj\x86\Debug\View\DeviceFamily-Mobile\LiveTitleChange.xbf
+D:\Animu recovery\Animu\bin\x86\Debug\View\DeviceFamily-Desktop\LiveTitleChange.xbf
+D:\Animu recovery\Animu\obj\x86\Debug\View\DeviceFamily-Desktop\LiveTitleChange.xaml
+D:\Animu recovery\Animu\obj\x86\Debug\View\DeviceFamily-Desktop\LiveTitleChange.xbf
+D:\Animu recovery\Animu\obj\x86\Debug\Animu.csprojResolveAssemblyReference.cache

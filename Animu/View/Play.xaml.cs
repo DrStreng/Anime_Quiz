@@ -28,6 +28,7 @@ namespace Animu.View
         List<Pytanka> ListPytanka = new List<Pytanka>();
         DBConnect db;
         int index = 0;
+        int mnoznik_pkt = 0;
         int punkty = 0;
         int poprawneOdp = 0;
         int maxPytan = 0;
@@ -59,21 +60,25 @@ namespace Animu.View
             {
                 ListPytanka = db.getEasy().OrderBy(i => Guid.NewGuid()).ToList();
                 TIMELIMIT = 20;
+                mnoznik_pkt = 1;
             }
             else if ((Mode)mode == Mode.MEDIUM)
             {
                 ListPytanka = db.getMedium().OrderBy(i => Guid.NewGuid()).ToList();
                 TIMELIMIT = 15;
+                mnoznik_pkt = 2;
             }
             else if ((Mode)mode == Mode.HARD)
             {
                 ListPytanka = db.getHard().OrderBy(i => Guid.NewGuid()).ToList();
                 TIMELIMIT = 10;
+                mnoznik_pkt = 3;
             }
             else if ((Mode)mode == Mode.VERYHARD)
             {
                 ListPytanka = db.getVeryHard().OrderBy(i => Guid.NewGuid()).ToList();
                 TIMELIMIT = 5;
+                mnoznik_pkt = 4;
             }
 
             MyProgress.Minimum = 0;
@@ -88,7 +93,8 @@ namespace Animu.View
         private void sprawdzOdp(Button click)
         {
             if (click.Content.Equals(ListPytanka[index].PoprawnaOdp)){
-                punkty += 1;
+
+                punkty += 1*mnoznik_pkt;
                 poprawneOdp++;
                 zdobytepkt.Text = punkty.ToString();
             }
@@ -128,6 +134,7 @@ namespace Animu.View
                     maxPytan=this.maxPytan,
                     punkciki = this.punkty
                 });
+
             }
 
         }

@@ -76,15 +76,15 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <RadioButton x:ConnectionId='33' 
-                    GroupName="Dificulty"
-                    Grid.Column="0"
-                    Content="Easy"
-                    x:Name="xŁatwy"/>
+                        GroupName="Dificulty"
+                        Grid.Column="0"
+                        Content="Easy"
+                        x:Name="xŁatwy"/>
                     <RadioButton x:ConnectionId='34' 
-                    GroupName="Dificulty"
-                    Grid.Column="1"
-                    Content="Medium"
-                    x:Name="xTrudny"/>
+                        GroupName="Dificulty"
+                        Grid.Column="1"
+                        Content="Medium"
+                        x:Name="xŚredni"/> 
                 </Grid>
 
                 <Grid Grid.Row="2" Margin="20 0 0 0">
@@ -97,7 +97,7 @@
                     GroupName="Dificulty"
                     Grid.Column="0"
                     Content="Hard"
-                    x:Name="xŚredni"/>
+                    x:Name="xTrudny"/>
                     <RadioButton x:ConnectionId='32' 
                     GroupName="Dificulty"
                     Grid.Column="1"

@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush 
                 AlignmentY="Center"  
-                ImageSource="../../Assets/MojuBJ.jpg">
+                ImageSource="{Binding DesktopBG}">
             </ImageBrush>
         </Grid.Background>
 

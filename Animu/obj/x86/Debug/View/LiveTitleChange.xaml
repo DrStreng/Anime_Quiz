@@ -8,29 +8,6 @@
     mc:Ignorable="d">
 
     <Grid>
-
-        <SplitView x:ConnectionId='6' Canvas.ZIndex="1" x:Name="Burgerek" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" Margin="0 10 0 0 ">
-            <SplitView.Pane>
-                <StackPanel  Background="Beige" HorizontalAlignment="Left">
-                    <Button x:ConnectionId='7' x:Name="show" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent"                    />
-                    <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='10' x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE007;" Height="50" Background="Transparent"                 />
-                        <TextBlock Text="{Binding Glowna}" FontSize="20" VerticalAlignment="Center"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='9' x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE00A;" Height="50" Background="Transparent"                  />
-                        <TextBlock Text="{Binding Ranking}" FontSize="20" VerticalAlignment="Center"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='8' x:Name="live_titles" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE104;" Height="50" Background="Transparent"                           />
-                        <TextBlock Text="live_titles" FontSize="20" VerticalAlignment="Center"/>
-                    </StackPanel>
-
-                </StackPanel>
-            </SplitView.Pane>
-        </SplitView>
-        
         <Grid.Background>
             <ImageBrush 
                 AlignmentY="Center"  
@@ -38,9 +15,71 @@
             </ImageBrush>
         </Grid.Background>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-       
+        <Grid Grid.Column="0">
+            <SplitView x:ConnectionId='17' Canvas.ZIndex="1" x:Name="Burgerek" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" Margin="0 10 0 0 ">
+                <SplitView.Pane>
+                    <StackPanel  Background="Beige" HorizontalAlignment="Left">
+                        <Button x:ConnectionId='18' x:Name="show" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent"                    />
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:ConnectionId='21' x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE007;" Height="50" Background="Transparent"                 />
+                            <TextBlock Text="{Binding Glowna}" FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:ConnectionId='20' x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE00A;" Height="50" Background="Transparent"                  />
+                            <TextBlock Text="{Binding Ranking}" FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:ConnectionId='19' x:Name="live_titles" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE104;" Height="50" Background="Transparent"                           />
+                            <TextBlock Text="live_titles" FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                    </StackPanel>
+                </SplitView.Pane>
+            </SplitView>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid VerticalAlignment="Center"
+              Background="White"
+              CornerRadius="8"
+              Margin="10,301,6,10"
+              Padding="15 50" Height="329">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                
+                
+                <TextBlock x:ConnectionId='15' x:Name="LiveTitlę"
+                       Grid.Row="0"
+                       FontSize="24"
+                       Text="LiveTitlę"
+                       HorizontalAlignment="Center"
+                       Foreground="#0d1d36"
+                       FontFamily="MV Boli"/>
+         
+                <Button x:ConnectionId='16' x:Name="submit" 
+                        HorizontalAlignment="Stretch" 
+                        Background="#FF1F7CB2"
+                        Foreground="White"
+                        Content="Zobacz co sie stanie" 
+                        Grid.Row="2" 
+                        Margin="5"  
+                                               />
+
+            </Grid>
+
+        </Grid>
 
     </Grid>
+
 </Page>
 

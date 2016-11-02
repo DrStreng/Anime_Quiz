@@ -26,8 +26,8 @@ namespace Animu.Model
     public enum Mode
     {
         EASY,
-        MEDIUM,
         HARD,
+        MEDIUM,
         VERYHARD
     }
 }

@@ -18,9 +18,15 @@ namespace Animu.ViewModel
             Glowna = "Glowna ";
             Ranking = "Ranking";
             Test = "test";
-           
+            Zdobytepkt = "Zdobyte pkty:";
+            DesktopBG = "../../Assets/pixel_art_pattern_gray-wallpaper-2560x1600.jpg";
+            PhoneBG = "../../Assets/MojuBJ.jpg";
+
         }
+
+        public string DesktopBG { get; private set; }
         public string Glowna { get; set; }
+        public string PhoneBG { get; private set; }
         public string Ranking { get; set; }
 
         public string Test {
@@ -31,6 +37,7 @@ namespace Animu.ViewModel
             }
         }
 
+        public string Zdobytepkt { get; private set; }
     }
 }
    

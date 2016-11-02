@@ -3,6 +3,7 @@
 using SQLite.Net;
 using SQLite.Net.Async;
 using SQLite.Net.Platform.WinRT;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -54,26 +55,41 @@ namespace Animu.Model
 
 
 
-        internal async void Insert(int punkciki, int maxPytan, int poprawneOdp)
+        internal void Insert(int punkciki, int maxPytan, int poprawneOdp)
         {
-           conn.Close();
+            //  conn.Close();
 
-         // string path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "ciota.db");
+            //// string path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "ciota.db");
 
-         using (var connection = new SQLiteConnectionWithLock(new SQLitePlatformWinRT(), new SQLiteConnectionString(path, false)))
-          {
-              connection.TraceListener = new DebugTraceListener();
-              var asyncConnection = new SQLiteAsyncConnection(() => { return connection; });
+            //using (var connection = new SQLiteConnectionWithLock(new SQLitePlatformWinRT(), new SQLiteConnectionString(path, false)))
+            // {
+            //     connection.TraceListener = new DebugTraceListener();
+            //     var asyncConnection = new SQLiteAsyncConnection(() => { return connection; });
 
-          //  await asyncConnection.CreateTableAsync<Wyniki>();
-           await asyncConnection.InsertAsync(new Wyniki
-             {
-                  Punkty = punkciki,
-                  IloscPytan = maxPytan,
-                  PoprawneOdp = poprawneOdp
-               });
-                var wniki = await asyncConnection.Table<Wyniki>().ToListAsync();
+            // //  await asyncConnection.CreateTableAsync<Wyniki>();
+            //  await asyncConnection.InsertAsync(new Wyniki
+            //    {
+            //         Punkty = punkciki,
+            //         IloscPytan = maxPytan,
+            //         PoprawneOdp = poprawneOdp
+            //      });
+            //       //var wniki = await asyncConnection.Table<Wyniki>().ToListAsync();
+            //   }
+            try
+            {
+                var s = new Wyniki()
+                {
+                    Punkty = punkciki,
+                    IloscPytan = maxPytan,
+                    PoprawneOdp = poprawneOdp
+                };
+                conn.Insert(s);
             }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Wystąpił Error " + ex.Message);
+            }
+          
         }
 
         internal List<Wyniki> getWyniki()

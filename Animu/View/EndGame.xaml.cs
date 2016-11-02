@@ -56,7 +56,7 @@ namespace Animu.View
             db = new DBConnect();
             var data = e.Parameter as Send;
 
-           punkcikiText.Text = $"{data.punkciki}";
+            punkcikiText.Text = $"{data.punkciki}";
             wynik.Text = $"{data.poprawneOdp }" + " / " + $"{data.maxPytan}";
             db.Insert(data.punkciki, data.maxPytan, data.poprawneOdp);
 

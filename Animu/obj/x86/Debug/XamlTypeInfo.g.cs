@@ -136,19 +136,19 @@ namespace Animu.Animu_XamlTypeInfo
             _typeNameTable[0] = "Animu.View.EndGame";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Animu.MainPage";
-            _typeNameTable[4] = "Animu.View.Play";
-            _typeNameTable[5] = "Animu.View.Results";
-            _typeNameTable[6] = "Animu.View.LiveTitleChange";
+            _typeNameTable[3] = "Animu.View.LiveTitleChange";
+            _typeNameTable[4] = "Animu.MainPage";
+            _typeNameTable[5] = "Animu.View.Play";
+            _typeNameTable[6] = "Animu.View.Results";
 
             _typeTable = new global::System.Type[7];
             _typeTable[0] = typeof(global::Animu.View.EndGame);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Animu.MainPage);
-            _typeTable[4] = typeof(global::Animu.View.Play);
-            _typeTable[5] = typeof(global::Animu.View.Results);
-            _typeTable[6] = typeof(global::Animu.View.LiveTitleChange);
+            _typeTable[3] = typeof(global::Animu.View.LiveTitleChange);
+            _typeTable[4] = typeof(global::Animu.MainPage);
+            _typeTable[5] = typeof(global::Animu.View.Play);
+            _typeTable[6] = typeof(global::Animu.View.Results);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -184,10 +184,10 @@ namespace Animu.Animu_XamlTypeInfo
         }
 
         private object Activate_0_EndGame() { return new global::Animu.View.EndGame(); }
-        private object Activate_3_MainPage() { return new global::Animu.MainPage(); }
-        private object Activate_4_Play() { return new global::Animu.View.Play(); }
-        private object Activate_5_Results() { return new global::Animu.View.Results(); }
-        private object Activate_6_LiveTitleChange() { return new global::Animu.View.LiveTitleChange(); }
+        private object Activate_3_LiveTitleChange() { return new global::Animu.View.LiveTitleChange(); }
+        private object Activate_4_MainPage() { return new global::Animu.MainPage(); }
+        private object Activate_5_Play() { return new global::Animu.View.Play(); }
+        private object Activate_6_Results() { return new global::Animu.View.Results(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -214,30 +214,30 @@ namespace Animu.Animu_XamlTypeInfo
                 xamlType = new global::Animu.Animu_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Animu.MainPage
+            case 3:   //  Animu.View.LiveTitleChange
                 userType = new global::Animu.Animu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_MainPage;
+                userType.Activator = Activate_3_LiveTitleChange;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Animu.View.Play
+            case 4:   //  Animu.MainPage
                 userType = new global::Animu.Animu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_Play;
+                userType.Activator = Activate_4_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Animu.View.Results
+            case 5:   //  Animu.View.Play
                 userType = new global::Animu.Animu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_Results;
+                userType.Activator = Activate_5_Play;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  Animu.View.LiveTitleChange
+            case 6:   //  Animu.View.Results
                 userType = new global::Animu.Animu_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_LiveTitleChange;
+                userType.Activator = Activate_6_Results;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

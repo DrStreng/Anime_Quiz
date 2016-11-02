@@ -58,13 +58,10 @@ namespace Animu
         private void Play_Click(object sender, RoutedEventArgs e)
         {
             Mode mode;
-            if (xŁatwy.IsChecked == true)
-                mode = Mode.EASY;
-            else if (xŚredni.IsChecked == true)
-                mode = Mode.MEDIUM;
-            else if (xTrudny.IsChecked == true)
-                mode = Mode.HARD;
-            else mode = Mode.VERYHARD;
+            if (xŁatwy.IsChecked == true) { mode = Mode.EASY; }
+            else if (xŚredni.IsChecked == true) { mode = Mode.MEDIUM; }
+            else if (xTrudny.IsChecked == true) { mode = Mode.HARD; }
+            else { mode = Mode.VERYHARD; }
 
             Frame.Navigate(typeof(View.Play),mode);
         }

@@ -37,7 +37,7 @@
             <ImageBrush 
                 AlignmentY="Center" 
                 Stretch="None" 
-                ImageSource="../../Assets/pixel_art_pattern_gray-wallpaper-2560x1600.jpg"
+                ImageSource="{Binding DesktopBG}"
                 >
                 <ImageBrush.Transform>
                     <CompositeTransform x:Name="TranslateX" />
@@ -88,41 +88,41 @@
                     Foreground="White"
                     HorizontalAlignment="Stretch" Click="Play_Click"/>
 
-                <Grid Grid.Row="1" Margin="20 0 0 0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <RadioButton 
-                    GroupName="Dificulty"
-                    Grid.Column="0"
-                    Content="Easy"
-                    x:Name="xŁatwy"/>
-                    <RadioButton 
-                    GroupName="Dificulty"
-                    Grid.Column="1"
-                    Content="Medium"
-                    x:Name="xTrudny"/>
-                </Grid>
+            <Grid Grid.Row="1" Margin="20 0 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton 
+                        GroupName="Dificulty"
+                        Grid.Column="0"
+                        Content="Easy"
+                        x:Name="xŁatwy"/>
+                <RadioButton 
+                        GroupName="Dificulty"
+                        Grid.Column="1"
+                        Content="Medium"
+                        x:Name="xŚredni"/>
+            </Grid>
 
-                <Grid Grid.Row="2" Margin="20 0 0 0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+            <Grid Grid.Row="2" Margin="20 0 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-                    <RadioButton 
+                <RadioButton 
                     GroupName="Dificulty"
                     Grid.Column="0"
                     Content="Hard"
-                    x:Name="xŚredni"/>
-                    <RadioButton 
+                    x:Name="xTrudny"/>
+                <RadioButton 
                     GroupName="Dificulty"
                     Grid.Column="1"
                     Content="Very Hard"
                     x:Name="xBTrudny"/>
-                </Grid>
             </Grid>
+        </Grid>
    
 
 

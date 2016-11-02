@@ -37,8 +37,7 @@
             <ImageBrush 
                 AlignmentY="Center" 
                 Stretch="None" 
-                ImageSource="../../Assets/pixel_art_pattern_gray-wallpaper-2560x1600.jpg"
-                >
+                ImageSource="{Binding PhoneBG}">
                 <ImageBrush.Transform>
                     <CompositeTransform x:Name="TranslateX" />
                 </ImageBrush.Transform>
@@ -46,18 +45,18 @@
             </ImageBrush>
         </Grid.Background>
 
-        <SplitView Canvas.ZIndex="1" x:Name="Burgerek" PanePlacement="Right" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="50" Margin="0,0,0,0">
+        <SplitView Canvas.ZIndex="1" x:Name="Burgerek" PanePlacement="Right" DisplayMode="CompactOverlay" CompactPaneLength="40" OpenPaneLength="40" Margin="0,0,0,0">
             <SplitView.Pane>
-                <StackPanel  Background="Beige" HorizontalAlignment="Right" Margin="0,0,0,0" Width="50" RenderTransformOrigin="1.146,0.497">
-                    <Button x:Name="show" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent"  Click="showpanel" />
+                <StackPanel  Background="Beige" Margin="0,0,0,0" Width="40" >
+                    <Button x:Name="show" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="40" Height="40" Background="Transparent"  Click="showpanel" />
                     <StackPanel Orientation="Horizontal">
-                        <Button x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE007;" Height="50" Background="Transparent" Click="glowna"  />
+                        <Button x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="40" Content="&#xE007;" Height="40" Background="Transparent" Click="glowna"  />
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE00A;" Height="50" Background="Transparent" Click="ranking"  />
+                        <Button x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="40" Content="&#xE00A;" Height="40" Background="Transparent" Click="ranking"  />
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button x:Name="live_titles" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE104;" Height="50" Background="Transparent" Click="live_titlesClick"  />
+                        <Button x:Name="live_titles" FontFamily="Segoe MDL2 Assets" Width="40" Content="&#xE104;" Height="40" Background="Transparent" Click="live_titlesClick"  />
                     </StackPanel>
                 </StackPanel>
             </SplitView.Pane>
@@ -67,7 +66,7 @@
         <Grid VerticalAlignment="Center"
               Background="White"
               CornerRadius="8"
-              Margin="10,275,70,153"
+              Margin="10,275,50,153"
               Padding="15 50">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
@@ -96,7 +95,7 @@
                 <RadioButton 
                     GroupName="Dificulty"
                     Grid.Column="1"
-                    Content="Medium"
+                    Content="Hard"
                     x:Name="xTrudny"/>
             </Grid>
 
@@ -109,7 +108,7 @@
                 <RadioButton 
                     GroupName="Dificulty"
                     Grid.Column="0"
-                    Content="Hard"
+                    Content="Medium"
                     x:Name="xŚredni"/>
                 <RadioButton 
                     GroupName="Dificulty"

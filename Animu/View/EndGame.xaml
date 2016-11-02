@@ -38,7 +38,7 @@
                        HorizontalAlignment="Center"
                        Foreground="#0d1d36"/>
             <TextBlock x:Name="punkcikiText"
-                       FontSize="35"
+                       FontSize="30"
                        Grid.Row="1"
                        Text="punkcikiText"
                        HorizontalAlignment="Center"
