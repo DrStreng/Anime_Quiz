@@ -8,40 +8,11 @@
     mc:Ignorable="d">
     <Grid>
 
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup>
-                <VisualState x:Name="VisualState500">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowHeight="1000" />
-                        <AdaptiveTrigger MinWindowWidth="1000" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="TranslateX.TranslateX"
-                                Value="0" />
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="VisualState0">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowHeight="0" />
-                        <AdaptiveTrigger MinWindowWidth="0" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="TranslateX.TranslateX"
-                                Value="-150" />
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
-
         <Grid.Background>
             <ImageBrush 
-                AlignmentY="Center" 
-                Stretch="None" 
+                AlignmentY="Bottom"
+                Stretch="Fill"
                 ImageSource="{Binding PhoneBG}">
-                <ImageBrush.Transform>
-                    <CompositeTransform x:Name="TranslateX" />
-                </ImageBrush.Transform>
-
             </ImageBrush>
         </Grid.Background>
 

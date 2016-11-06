@@ -70,8 +70,8 @@
       <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontFamily" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontStyle" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Opacity" />

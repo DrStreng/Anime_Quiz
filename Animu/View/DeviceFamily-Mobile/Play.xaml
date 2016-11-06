@@ -11,14 +11,9 @@
     <Grid>
         <Grid.Background>
             <ImageBrush 
-                AlignmentY="Center" 
-                Stretch="None" 
-                ImageSource="{Binding PhoneBG}"
-                >
-                <ImageBrush.Transform>
-                    <CompositeTransform TranslateX="-150"/>
-                </ImageBrush.Transform>
-
+                AlignmentY="Bottom"
+                Stretch="Fill"
+                ImageSource="{Binding PhoneBG}">
             </ImageBrush>
         </Grid.Background>
 

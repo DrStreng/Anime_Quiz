@@ -9,38 +9,13 @@
 
 
     <Grid>
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup>
-                <VisualState x:Name="VisualState500">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowHeight="100" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="TranslateX.TranslateX"
-                                Value="-150" />
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="VisualState0">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowHeight="0" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="TranslateX.TranslateX"
-                                Value="0" />
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
 
         <Grid.Background>
             <ImageBrush 
-                AlignmentY="Center" 
-                Stretch="None" 
+                AlignmentY="Bottom"
+                Stretch="Fill"
                 ImageSource="{Binding PhoneBG}"
                 >
-                <ImageBrush.Transform>
-                    <CompositeTransform x:Name="TranslateX" TranslateX="-150"/>
-                </ImageBrush.Transform>
             </ImageBrush>
         </Grid.Background>
 
@@ -73,11 +48,12 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <TextBlock x:Name="wynik"
-                       FontSize="30"
+                       FontSize="24"
                        Grid.Row="0"
                        Text="wynik"
                        HorizontalAlignment="Center"
-                       Foreground="#0d1d36"/>
+                       Foreground="#0d1d36"
+                       FontFamily="MV Boli"/>
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -86,9 +62,10 @@
 
                 <TextBlock x:Name="zdobytepkt"
                            Grid.Column="0"
-                           FontSize="35"
+                           FontSize="18"
                            HorizontalAlignment="Center"
                            Foreground="#0d1d36"
+                           FontFamily="MV Boli"
                            Text="{Binding Zdobytepkt}"/>
                 
                 <TextBlock x:Name="punkcikiText"

@@ -10,14 +10,9 @@
     <Grid>
         <Grid.Background>
             <ImageBrush 
-                AlignmentY="Center" 
-                Stretch="None" 
-                ImageSource="{Binding PhoneBG}"
-                >
-                <ImageBrush.Transform>
-                    <CompositeTransform TranslateX="-150"/>
-                </ImageBrush.Transform>
-
+                AlignmentY="Bottom"
+                Stretch="Fill"
+                ImageSource="{Binding PhoneBG}">
             </ImageBrush>
         </Grid.Background>
         <SplitView Canvas.ZIndex="1" x:Name="Burgerek" PanePlacement="Right" DisplayMode="CompactOverlay" CompactPaneLength="40" OpenPaneLength="40" Margin="0,0,0,0">
@@ -37,7 +32,7 @@
             </SplitView.Pane>
         </SplitView>
         <Grid VerticalAlignment="Top"
-                Margin="60 8 8 8"
+                Margin="10 8 60 8"
                 Padding="15 50">
             <TextBlock x:Name="Rankings"
                        FontSize="50"
@@ -67,7 +62,7 @@
                                     <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
 
@@ -76,7 +71,7 @@
                                        Grid.Column="0"
                                        HorizontalAlignment="Center"
                                        FontSize="24" 
-                                       FontStyle="Italic" 
+                                       FontFamily="MV Boli"
                                        FontWeight="SemiBold"
                                        Foreground="DarkBlue"/>
                                 <TextBlock Text="Punkty:      " Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" FontSize="16"  FontStyle="Italic" FontWeight="SemiBold" Foreground="DarkBlue"/>
