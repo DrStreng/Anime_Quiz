@@ -20,49 +20,100 @@
 
             </ImageBrush>
         </Grid.Background>
-
-        <SplitView x:ConnectionId='7' Canvas.ZIndex="1" x:Name="Burgerek" PanePlacement="Right" DisplayMode="CompactOverlay" CompactPaneLength="40" OpenPaneLength="40" Margin="0,0,0,0">
+        <SplitView x:ConnectionId='8' Canvas.ZIndex="1" x:Name="Burgerek" PanePlacement="Right" DisplayMode="CompactOverlay" CompactPaneLength="40" OpenPaneLength="40" Margin="0,0,0,0">
             <SplitView.Pane>
                 <StackPanel  Background="Beige" Margin="0,0,0,0" Width="40" >
-                    <Button x:ConnectionId='9' x:Name="show" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="40" Height="40" Background="Transparent"                    />
+                    <Button x:ConnectionId='11' x:Name="show" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="40" Height="40" Background="Transparent"                    />
                     <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='12' x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="40" Content="&#xE007;" Height="40" Background="Transparent"                 />
+                        <Button x:ConnectionId='14' x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="40" Content="&#xE007;" Height="40" Background="Transparent"                 />
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='11' x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="40" Content="&#xE00A;" Height="40" Background="Transparent"                  />
+                        <Button x:ConnectionId='13' x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="40" Content="&#xE00A;" Height="40" Background="Transparent"                  />
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='10' x:Name="live_titles" FontFamily="Segoe MDL2 Assets" Width="40" Content="&#xE104;" Height="40" Background="Transparent"                           />
+                        <Button x:ConnectionId='12' x:Name="live_titles" FontFamily="Segoe MDL2 Assets" Width="40" Content="&#xE104;" Height="40" Background="Transparent"                           />
                     </StackPanel>
                 </StackPanel>
             </SplitView.Pane>
         </SplitView>
-
         <Grid VerticalAlignment="Top"
-                Margin="8 8 60 8"
+                Margin="60 8 8 8"
                 Padding="15 50">
-            <TextBlock x:ConnectionId='8' x:Name="Rankingi"
+            <TextBlock x:ConnectionId='10' x:Name="Rankings"
                        FontSize="50"
                        Text="Ranking"
                        HorizontalAlignment="Center"
-                       Foreground="white"
+                       Foreground="#0d1d36"
                        FontFamily="MV Boli"/>
         </Grid>
         <Grid VerticalAlignment="Center"
               Background="White"
               CornerRadius="8"
-              Margin="10,318,50,67"
-              Padding="15 50" Height="255">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+              Margin="10,301,60,10"
+              Padding="15 50" Height="329">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <ListView x:ConnectionId='9' x:Name="myListpkt" Margin="0,0,0,0" Grid.Row="1" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="ZdobytePunkty"
+                                       Grid.Row="0"
+                                       Grid.Column="0"
+                                       HorizontalAlignment="Center"
+                                       FontSize="24" 
+                                       FontStyle="Italic" 
+                                       FontWeight="SemiBold"
+                                       Foreground="DarkBlue"/>
+                                <TextBlock Text="Punkty:      " Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" FontSize="16"  FontStyle="Italic" FontWeight="SemiBold" Foreground="DarkBlue"/>
+                                <TextBlock Text="PoprawneOdp: " Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" FontSize="16"  FontStyle="Italic" FontWeight="SemiBold" Foreground="DarkBlue"/>
+                                <TextBlock Text="IloscPytan:  " Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" FontSize="16"  FontStyle="Italic" FontWeight="SemiBold" Foreground="DarkBlue"/>
+
+                                <TextBlock Text="{Binding Punkty}"
+                                       Grid.Column="1"
+                                       Grid.Row="1"
+                                       HorizontalAlignment="Center"
+                                       FontSize="24" 
+                                       FontStyle="Italic" 
+                                       FontWeight="SemiBold"
+                                       Foreground="DarkBlue"/>
+                                <TextBlock Text="{Binding PoprawneOdp}"
+                                       Grid.Column="1"
+                                       Grid.Row="2"
+                                       HorizontalAlignment="Center"
+                                       FontSize="20"
+                                       Foreground="DarkBlue" 
+                                       Opacity="0.9"/>
+                                <TextBlock Text="{Binding IloscPytan}"
+                                       Grid.Column="1"
+                                       Grid.Row="3"
+                                       HorizontalAlignment="Center"
+                                       FontSize="18"
+                                       Foreground="DarkBlue" 
+                                       Opacity="0.8"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+
+
         </Grid>
     </Grid>
 
 </Page>
-
 

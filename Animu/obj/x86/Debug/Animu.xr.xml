@@ -2,13 +2,13 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="DesktopBG" />
-    <RootPropertyPathName Name="Punkciki" />
     <RootPropertyPathName Name="Zdobytepkt" />
     <RootPropertyPathName Name="Ranking" />
     <RootPropertyPathName Name="Glowna" />
-    <RootPropertyPathName Name="PhoneBG" />
-    <RootPropertyPathName Name="zdjecie" />
+    <RootPropertyPathName Name="IloscPytan" />
+    <RootPropertyPathName Name="PoprawneOdp" />
     <RootPropertyPathName Name="Punkty" />
+    <RootPropertyPathName Name="PhoneBG" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -72,6 +72,9 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Opacity" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
@@ -126,9 +129,15 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Source" />
     </RootType>
     <RootType FullName="Animu.View.Play" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
     <RootType FullName="Animu.View.Results" />
   </Roots.RootTypes>
 </Roots>

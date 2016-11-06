@@ -2,6 +2,7 @@
 using Animu.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -28,7 +29,6 @@ namespace Animu.View
         public EndGame()
         {
             this.InitializeComponent();
-       
             this.DataContext = new SampleViewModel();
       
 

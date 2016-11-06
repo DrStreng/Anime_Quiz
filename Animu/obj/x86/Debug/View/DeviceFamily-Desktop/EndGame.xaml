@@ -101,7 +101,7 @@
                 <TextBlock x:ConnectionId='7' x:Name="punkcikiText"
                        FontSize="35"
                        Grid.Column="1"
-                       Text="{Binding Punkciki}"
+                       Text="aaa"
                        HorizontalAlignment="Center"
                        Foreground="#0d1d36"/>
             </Grid>

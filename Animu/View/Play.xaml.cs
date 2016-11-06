@@ -34,18 +34,8 @@ namespace Animu.View
         int maxPytan = 0;
         int aktualnePytanie = 1;
 
-        private void showpanel(object sender, RoutedEventArgs e)
-        {
-            Burgerek.IsPaneOpen = !Burgerek.IsPaneOpen;
-            if (Burgerek.IsPaneOpen)
-                show.Content = "\uE00E";
-            else
-                show.Content = "\uE00F";
-        }
-
         public Play()
         {
-
             this.InitializeComponent();
             db = new DBConnect();
             this.DataContext = new SampleViewModel();
@@ -103,7 +93,6 @@ namespace Animu.View
             resetTimer();
             Pytanko(index);
 
-
         }
 
 
@@ -111,7 +100,6 @@ namespace Animu.View
         {
             if(index < ListPytanka.Count)
             {
-                
                 string imgDB = "ms-appx:///Assets/animeChar/"+ ListPytanka[index].Image + ".png";
                 ImageContent.Source = new BitmapImage(new Uri(imgDB));
 
@@ -174,6 +162,14 @@ namespace Animu.View
         private void live_titlesClick(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(LiveTitleChange));
+        }
+        private void showpanel(object sender, RoutedEventArgs e)
+        {
+            Burgerek.IsPaneOpen = !Burgerek.IsPaneOpen;
+            if (Burgerek.IsPaneOpen)
+                show.Content = "\uE00E";
+            else
+                show.Content = "\uE00F";
         }
     }
 }

@@ -20,10 +20,31 @@
 
             </ImageBrush>
         </Grid.Background>
+        <SplitView Canvas.ZIndex="1" x:Name="Burgerek" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" Margin="0 10 0 0 ">
+            <SplitView.Pane>
+                <StackPanel  Background="Beige" HorizontalAlignment="Left">
+                    <Button x:Name="show" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent"  Click="showpanel" />
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="Glowna" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE007;" Height="50" Background="Transparent" Click="glowna"  />
+                        <TextBlock Text="{Binding Glowna}" FontSize="20" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="Ranking" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE00A;" Height="50" Background="Transparent" Click="ranking"  />
+                        <TextBlock Text="{Binding Ranking}" FontSize="20" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="live_titles" FontFamily="Segoe MDL2 Assets" Width="50" Content="&#xE104;" Height="50" Background="Transparent" Click="live_titlesClick"  />
+                        <TextBlock Text="live_titles" FontSize="20" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
         <Grid VerticalAlignment="Top"
-                Margin="8 8 8 8"
+                Margin="60 8 8 8"
                 Padding="15 50">
-            <TextBlock x:Name="Ranking"
+            <TextBlock x:Name="Rankings"
                        FontSize="50"
                        Text="Ranking"
                        HorizontalAlignment="Center"
@@ -33,28 +54,68 @@
         <Grid VerticalAlignment="Center"
               Background="White"
               CornerRadius="8"
-              Margin="10,301,6,10"
+              Margin="60,301,6,10"
               Padding="15 50" Height="329">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid  Grid.Column="0">
-                <TextBlock x:Name="pkt"
-                       FontSize="35"
-                       Text="{Binding Punkty}"
-                       HorizontalAlignment="Center"
-                       Foreground="#0d1d36"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <ListView x:Name="myListpkt" Margin="0,0,0,0" Grid.Row="1" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="ZdobytePunkty"
+                                       Grid.Row="0"
+                                       Grid.Column="0"
+                                       HorizontalAlignment="Center"
+                                       FontSize="24" 
+                                       FontStyle="Italic" 
+                                       FontWeight="SemiBold"
+                                       Foreground="DarkBlue"/>
+                                <TextBlock Text="Punkty:      " Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" FontSize="16"  FontStyle="Italic" FontWeight="SemiBold" Foreground="DarkBlue"/>
+                                <TextBlock Text="PoprawneOdp: " Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" FontSize="16"  FontStyle="Italic" FontWeight="SemiBold" Foreground="DarkBlue"/>
+                                <TextBlock Text="IloscPytan:  " Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" FontSize="16"  FontStyle="Italic" FontWeight="SemiBold" Foreground="DarkBlue"/>
+
+                                <TextBlock Text="{Binding Punkty}"
+                                       Grid.Column="1"
+                                       Grid.Row="1"
+                                       HorizontalAlignment="Center"
+                                       FontSize="24" 
+                                       FontStyle="Italic" 
+                                       FontWeight="SemiBold"
+                                       Foreground="DarkBlue"/>
+                                <TextBlock Text="{Binding PoprawneOdp}"
+                                       Grid.Column="1"
+                                       Grid.Row="2"
+                                       HorizontalAlignment="Center"
+                                       FontSize="20"
+                                       Foreground="DarkBlue" 
+                                       Opacity="0.9"/>
+                                <TextBlock Text="{Binding IloscPytan}"
+                                       Grid.Column="1"
+                                       Grid.Row="3"
+                                       HorizontalAlignment="Center"
+                                       FontSize="18"
+                                       Foreground="DarkBlue" 
+                                       Opacity="0.8"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </Grid>
-            
-            <Grid Grid.Column="1">
-                <Image Source="{Binding zdjecie}"
-                       Width="50"
-                       Height="50"/>
-            </Grid>
+
 
         </Grid>
     </Grid>

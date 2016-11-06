@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Animu.View
@@ -25,10 +26,12 @@ namespace Animu.View
     /// 
 
 
+
     public sealed partial class Results : Page
     {
+    
         List<Wyniki> listWyniki = new List<Wyniki>();
-        List<ScoreTemplate> listSource = new List<ScoreTemplate>();
+   
         DBConnect db;
 
         public Results()
@@ -37,23 +40,7 @@ namespace Animu.View
             db = new DBConnect();
             this.DataContext = new SampleViewModel();
         }
-        private void showpanel(object sender, RoutedEventArgs e)
-        {
-            Burgerek.IsPaneOpen = !Burgerek.IsPaneOpen;
-            if (Burgerek.IsPaneOpen)
-                show.Content = "\uE00E";
-            else
-                show.Content = "\uE00F";
-        }
 
-        private void ranking(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(View.Results));
-        }
-        private void glowna(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(MainPage));
-        }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -62,23 +49,35 @@ namespace Animu.View
 
         private void loadRanking()
         {
-            //listWyniki = db.getWyniki();
-            //foreach( var item in listWyniki)
-            //{
-            //    ScoreTemplate score = new ScoreTemplate();
-            //    score.Punkty = item.Punkty;
-            //    score.zdjecie = "ms-appx:///Assets/Medals/medal.png";
-            //    listSource.Add(score);
-            //}
-            //listSource = listSource.OrderByDescending(x => x.Punkty).ToList();
-            //listSource[0].zdjecie = "ms-appx:///Assets/Medals/certificate.png";
-            //listSource[1].zdjecie = "ms-appx:///Assets/Medals/certificate2.png";
-            //listSource[2].zdjecie = "ms-appx:///Assets/Medals/certificate1.png";
-            //listWyniki.ItemsSource = listSource;
+           var a = db.getWyniki();
+         
+            foreach (var data in a)
+            {
+                Wyniki w1 = new Wyniki() { Punkty = data.Punkty,IloscPytan = data.IloscPytan,PoprawneOdp=data.PoprawneOdp };
+                listWyniki.Add(w1);
+            }
+            myListpkt.ItemsSource = listWyniki;
         }
+
         private void live_titlesClick(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(LiveTitleChange));
+        }
+        private void ranking(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(View.Results));
+        }
+        private void glowna(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+        private void showpanel(object sender, RoutedEventArgs e)
+        {
+            Burgerek.IsPaneOpen = !Burgerek.IsPaneOpen;
+            if (Burgerek.IsPaneOpen)
+                show.Content = "\uE00E";
+            else
+                show.Content = "\uE00F";
         }
     }
 }

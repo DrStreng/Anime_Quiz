@@ -105,7 +105,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\ScoreTemplate.cs" />
     <Compile Include="Model\Wyniki.cs" />
     <Compile Include="ViewModel\SampleViewModel.cs" />
     <Compile Include="ViewModel\SendViewModel.cs" />

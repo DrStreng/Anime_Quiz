@@ -24,11 +24,13 @@ namespace Animu.Model
     {
         string path;
         SQLiteConnection conn;
+        string path2;
 
         public DBConnect()
         {
             path = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, "DB", "aaa.db");
             conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
+            path2 = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "wyniki.db");
         }
 
         internal List<Pytanka> getEasy()
@@ -53,50 +55,29 @@ namespace Animu.Model
             return data.ToList();
         }
 
-
-
-        internal void Insert(int punkciki, int maxPytan, int poprawneOdp)
+        internal async void Insert(int punkciki, int maxPytan, int poprawneOdp)
         {
-            //  conn.Close();
-
-            //// string path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "ciota.db");
-
-            //using (var connection = new SQLiteConnectionWithLock(new SQLitePlatformWinRT(), new SQLiteConnectionString(path, false)))
-            // {
-            //     connection.TraceListener = new DebugTraceListener();
-            //     var asyncConnection = new SQLiteAsyncConnection(() => { return connection; });
-
-            // //  await asyncConnection.CreateTableAsync<Wyniki>();
-            //  await asyncConnection.InsertAsync(new Wyniki
-            //    {
-            //         Punkty = punkciki,
-            //         IloscPytan = maxPytan,
-            //         PoprawneOdp = poprawneOdp
-            //      });
-            //       //var wniki = await asyncConnection.Table<Wyniki>().ToListAsync();
-            //   }
-            try
+            conn.Close();
+            using (var connection = new SQLiteConnectionWithLock(new SQLitePlatformWinRT(), new SQLiteConnectionString(path2, false)))
             {
-                var s = new Wyniki()
-                {
-                    Punkty = punkciki,
-                    IloscPytan = maxPytan,
-                    PoprawneOdp = poprawneOdp
-                };
-                conn.Insert(s);
+               connection.TraceListener = new DebugTraceListener();
+               var asyncConnection = new SQLiteAsyncConnection(() => { return connection; });
+               await asyncConnection.CreateTableAsync<Wyniki>();
+               await asyncConnection.InsertAsync(new Wyniki
+               {
+                   Punkty = punkciki,
+                   IloscPytan = maxPytan,
+                   PoprawneOdp = poprawneOdp
+                });
             }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("Wystąpił Error " + ex.Message);
-            }
-          
         }
 
         internal List<Wyniki> getWyniki()
         {
-            return conn.Table<Wyniki>().ToList();
+            using (var connection = new SQLiteConnectionWithLock(new SQLitePlatformWinRT(), new SQLiteConnectionString(path2, false)))
+            {
+                return connection.Table<Wyniki>().ToList();
+            }
         }
-
-
     }
 }
